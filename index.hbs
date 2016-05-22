@@ -10,12 +10,12 @@
     {{#foreach posts}}
 
     <article itemscope itemtype="http://schema.org/Article" class="{{post_class}}">
-        
+
         <section class="post">
             <header class="post-header">
                 {{! img class="post-avatar" alt="...'s avatar" src="..." height="48" width="48" }}
                 <h2 itemprop="name" class="post-title"><a href="{{url}}">{{title}}</a></h2>
-                <p class="post-meta"><time itemprop="datePublished" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{#if tags}}on {{tags}}{{/if}}</span></p>
+                <p class="post-meta"><time itemprop="datePublished" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMM DD, YYYY"}}</time> {{#if tags}}on {{tags}}{{/if}}</span></p>
             </header>
             <div itemprop="description" class="post-description">
                 <p>{{excerpt}}&hellip;</p>
